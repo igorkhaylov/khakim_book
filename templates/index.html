@@ -1,0 +1,339 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>бахтиёр шарипов</title>
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+</head>
+
+<body>
+<header class="header">
+    <div class="header__container">
+        <div class="logo">
+            <a id="anchors" href="#anchor1"><img class="item" src="{% static 'images/logo.png' %}" alt="logo"></a>
+        </div>
+        <nav class="links">
+            <ul>
+                <li id="links-li">
+                    <a id="anchors" href="#anchor1">
+                        <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentcolor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="burger-menu-svg">
+                            <path d="m20.24 12.24a6 6 0 0 0-8.49-8.49l5 10.5v19h8.5z"></path>
+                            <line x1="16" y1="8" x2="2" y2="22"></line>
+                            <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                        </svg>
+                        об авторе
+                    </a>
+                </li>
+                <li id="links-li">
+                    <a id="anchors" href="#anchor2">
+                        <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentcolor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="burger-menu-svg">
+                            <path d="m19 21l-7-5-7 5v5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        доступные книги
+                    </a>
+                </li>
+                <li id="links-li">
+                    <a id="anchors" href="#anchor3">
+                        <svg width="20" height="20" fill="currentcolor" class="burger-menu-svg" viewbox="0 0 16 16">
+                            <path
+                                    d="m6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1h1zm11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                        </svg>
+                        контакты
+                    </a>
+                </li>
+                <li id="links-li">
+                    <a href="tel:+998915242822">
+                        <svg width="20" height="20" fill="currentcolor" class="burger-menu-svg" viewbox="0 0 16 16">
+                            <path
+                                    d="m3.654 1.328a.678.678 0 0 0-1.015-.063l1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459l5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58l3.654 1.328zm1.884.511a1.745 1.745 0 0 1 2.612.163l6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877l1.885.511zm11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0v1.707l-4.146 4.147a.5.5 0 0 1-.708-.708l14.293 1h11.5a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        +99891 524 28 22
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="btn-container">
+            <button class="header-btn btn">Получить книгу</button>
+            <div class="burger-btn">
+                <div class="for-opacity"></div>
+                <div class="for-opacity"></div>
+                <div class="for-opacity"></div>
+                <svg class="close-outline" viewbox="0 0 512 512">
+                    <title>close</title>
+                    <path fill="white" stroke="white" stroke-width="45" d="m368 368l144 144m368 144l144 368"/>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+</header>
+<main class="main">
+    <section id="anchor1" class="one-screen">
+        <div class="one-screen__container">
+            <h2>
+                Добро пожаловать!
+            </h2>
+            <p>
+                Представляем вашему вниманию нашего писателя бахтиёра шарипова который не даст вам заскучать и поможет
+                погрузиться в
+                его замечательный мир книг и историй. Книги можно скачать или купить прямо на сайте и вперёд к
+                приключениям!
+            </p>
+            <a href="#anchor2">
+                <img class="first-book" src="{% static 'images/book1.jpg' %}" alt="book">
+                <img class="second-book" src="{% static 'images/book2.jpg' %}" alt="book">
+                <img class="third-book" src="{% static 'images/book3.jpg' %}" alt="book">
+            </a>
+        </div>
+    </section>
+    <section class="choose-book">
+        <div class="choose-book__container">
+            <b></b>
+            <div class="text">
+                <h2>
+                    Не знаете какую книгу выбрать?
+                </h2>
+                <p>
+                    Представляем вашему вниманию 3 книги нашего писателя который не даст вам заскучать и поможет
+                    погрузиться
+                    в
+                    его замечательный мир книг и историй. «Кечиккан кабутарлар» - история горячей и грустной любви,
+                    был написан в 2018 году(136 страниц). «Юрак йиглайди» или «Сердце плачет» - интересные жизненные
+                    и любовные истории, был написан в 2021 году(412 страниц).
+                    «Фалак Тарозуси» - Фельетон и о публицизме, был написан в 2016 году (168 страниц).
+                    Книги можно скачать или купить прямо на сайте и вперёд к
+                    приключениям! фельетон
+                </p>
+                <img src="{% static 'images/choose-book-Vector.png' %}" alt="choose-book-Vector">
+            </div>
+            <div class="choose-book__images">
+                <div id="anchor2"></div>
+                <div class="images-container">
+                    <div id="book-item1" class="book-img">
+                        <div class="book-item">
+                            <img src="{% static 'images/book1.jpg' %}" alt="book1">
+                            <div class="book-item-after">
+
+                            </div>
+                            <button class="buy-book">
+                                Подробнее
+                            </button>
+                        </div>
+                        <span>«Кечиккан <br> кабутарлар» <br> 152 страниц <br> <span>2018 год</span></span>
+                    </div>
+                    <div id="book-item2" class="book-img">
+                        <div class="book-item">
+                            <img src="{% static 'images/book2.jpg' %}" alt="book2">
+                            <div class="book-item-after">
+
+                            </div>
+                            <button class="buy-book">
+                                Подробнее
+                            </button>
+                        </div>
+                        <span>«Юрак <br> йиглайди» <br> 412 страниц <br> <span>2021 год</span></span>
+                    </div>
+                    <div id="book-item3" class="book-img">
+                        <div class="book-item">
+                            <img src="{% static 'images/book3.jpg' %}" alt="book3">
+                            <div class="book-item-after">
+
+                            </div>
+                            <button class="buy-book">
+                                Подробнее
+                            </button>
+                        </div>
+                        <span>«Фалак <br> Тарозуси» <br> 168 страниц <br> <span>2016 год</span></span>
+                    </div>
+                </div>
+            </div>
+            <b></b>
+        </div>
+
+    </section>
+    <section class="news">
+        <div class="news__container">
+            <div class="news__container__left">
+                <div class="title">
+                    <h2>
+                        «Кечиккан кабутарлар»
+                    </h2>
+                    <span>Новинки</span>
+                    <img src="{% static 'images/time.png' %}" alt="time">
+                </div>
+                <p>
+                    Самаркандский писатель Бахтиёр Шарипов в своей книге «Кечиккан кабутарлар» или «Страдания
+                    Отабека» в «Уткан кунлар» Абдулло Кадырова создал книгу о жизни сына главного героя Отабека
+                    Ёдгорбека, точнее его внука маленького Отабека.
+                </p>
+                <button class="news-btn">Подробнее</button>
+            </div>
+            <div class="news__container__right">
+                <iframe class="video" src="https://www.youtube.com/embed/CAFU_gWOBv0" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="payment">
+        <div class="payment__container">
+            <div class="payment__container__left">
+                <h2>Оплатить книгу</h2>
+                <table>
+                    <tr>
+                        <td>Visa:</td>
+                        <td>4738 7301 4548 6380</td>
+                    </tr>
+                    <tr>
+                        <td>Uzcard:</td>
+                        <td>8600 0604 7049 0302</td>
+                    </tr>
+                    <tr>
+                        <td>UnionPay:</td>
+                        <td>6213 4901 7993 3968</td>
+                    </tr>
+                </table>
+                <button class="payment-btn">Отправить sms</button>
+            </div>
+            <div class="payment__container__right">
+                <img class="uzcard" src="{% static 'images/uzcard.png' %}" alt="uzcard">
+                <img class="humocard" src="{% static 'images/unionpay.png' %}" alt="humo-card">
+            </div>
+        </div>
+    </section>
+    <div class="burger-modal">
+
+    </div>
+    <div class="description-book">
+        <div class="description-book__wrapper">
+            <div class="description-book__wrapper__close">
+                <span id="close-descrip">&times;</span>
+            </div>
+            <div class="description-book__wrapper__top">
+                <div class="description-book__wrapper__top__img">
+                    <img id="descripImg" src="{% static 'images/book1.jpg' %}" alt="book1">
+                </div>
+                <div id="lineHeight" class="description-book__wrapper__top__item">
+                    <span id="descrip-title"></span>
+                    <span id="descrip-page"></span>
+                    <span>Выпуск : <span id="descrip-year"> </span></span>
+                    <button id="open-payment-modal">
+                        Получить книги
+                    </button>
+                    <span>
+                            Вы можете купить 3 электронных книг <b>Бахтиёра Шарипова</b> всего лишь за 5000 сум !
+                        </span>
+                    <div class="audio-container">
+                        <audio controls src="{% static 'audio/кечиккан кабутарлар аудио.mp3' %}"></audio>
+                        <p class="audiocaption">отрывок из аудиокниги полная версия будет доступно после оплаты.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="description-book__wrapper__descrip">
+                <h4>Описание книги</h4>
+                <br>
+                <p id="descrip-text">
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="payment-container">
+        <div class="payment-modal">
+            <div class="payment-modal-time">&times;</div>
+            <h3 class="h3-title">
+                Вы можете купить 3 электронные книги <b>Бахтиёра Шарипова</b> всего лишь за 5000 сум!
+            </h3>
+            <div class="wrap">
+                <form id="payment-form" action="#">
+                    <h3>Ваши данные</h3>
+                    <input required placeholder="имя и фамилия" type="text" name="clientName">
+                    <input required id="telNumber" placeholder="телефон номер" type="number" name="clientNum">
+                    <input required placeholder="электронная почта" type="email" name="email">
+                    <div style="display: none;" class="payment-modal__form__wrapper">
+                        <select id="selectCard" name="selectCard">
+                            <option class="payment-modal__form__wrapper__opt" selected hidden>Выберите карту
+                            </option>
+                            <option class="payment-modal__form__wrapper__opt" value="uzcard">Uzcard</option>
+                            <option class="payment-modal__form__wrapper__opt" value="unionpay">UnionPay</option>
+                            <option class="payment-modal__form__wrapper__opt" value="visa">Visa</option>
+                        </select>
+                        <img class="opt-card" src="{% static 'images/prototype.png' %}" alt="card">
+                    </div>
+                    <div style="display: none;" class="card-number">
+                        <input required class="card-number__item" placeholder="Номер карты" type="number">
+                        <img class="eye-svg" src="{% static 'images/eye-outline.svg' %}" alt="eye svg">
+                    </div>
+                    <button>Отправить</button>
+                </form>
+                <div class="author-data">
+                    <h3>Данные автора</h3>
+                    <span>
+                            Бахтиёр Шарипов
+                        </span>
+                    <span>
+                            <b>тел:</b> +99891 524 28 22
+                        </span>
+                    <span><b>E-mail</b> : <br> mr.bakhtiyarsharipov@mail.ru</span>
+                    <span>
+                            <b>Visa :</b> 4738 7301 4548 6380
+                        </span>
+                    <span>
+                            <b>UzCard :</b> 8600 0604 7049 0302
+                        </span>
+                    <span>
+                            <b>UnionPay :</b> 6213 4901 7993 3968
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="anchor3" class="footer">
+    <div class="footer__container">
+        <div id="none" class="footer__container__item">
+            <ul>
+                <li>
+                    <a href="#anchor1"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
+                    <span>Сайт лучших книг</span>
+                </li>
+                <li>
+                    <span>Автор: KhakimDon</span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__container__item">
+            <ul>
+                <li>Политика конфеденциальности</li>
+                <li>Сайт создан командой Liberty code</li>
+                <li>2021 год</li>
+            </ul>
+        </div>
+        <div class="footer__container__item">
+            <ul>
+                <li>
+                    <a href="tel:+998915242822">+99891 524 28 22</a>
+                </li>
+                <li>
+                    <a href="tel:+998915242822">+99891 553 30 44</a>
+                </li>
+                <li>
+                    <a href="tel:+998915242822">+99891 549 17 54</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
