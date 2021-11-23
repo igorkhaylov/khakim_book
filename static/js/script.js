@@ -88,7 +88,7 @@ let descripText = document.querySelector('#descrip-text')
 
 let book1 = [
         {
-                img: 'static/images/book1.jpg',
+                img: './images/book1.jpg',
                 name: '«Кечиккан кабутарлар»',
                 yaer: ' 2018 год',
                 pages: '152 Страниц',
@@ -98,7 +98,7 @@ let book1 = [
 ]
 let book2 = [
         {
-                img: 'static/images/book2.jpg',
+                img: './images/book2.jpg',
                 name: '«Юрак йиглайди»',
                 yaer: ' 2021 год',
                 pages: '412 страниц',
@@ -107,7 +107,7 @@ let book2 = [
 ]
 let book3 = [
         {
-                img: 'static/images/book3.jpg',
+                img: './images/book3.jpg',
                 name: '«Фалак Тарозуси»',
                 yaer: ' 2016 год',
                 pages: '168 страниц',
@@ -118,7 +118,6 @@ let book3 = [
 
 let audioCont = document.querySelector('.audio-container')
 let lineHeight = document.querySelector('#lineHeight')
-
 
 buyBook1.onclick = () => {
         audioCont.style.display = 'block'
@@ -204,14 +203,14 @@ eyeSvg.onclick = () => {
 
         if (eyeSvgCount == true) {
                 eyeSvg.removeAttribute('src')
-                eyeSvg.setAttribute('src', 'static/images/eye-off-outline.svg')
+                eyeSvg.setAttribute('src', './images/eye-off-outline.svg')
                 cardNumber.removeAttribute('type')
                 cardNumber.setAttribute('type', 'password')
                 eyeSvgCount = false
         }
         else if (eyeSvgCount == false) {
                 eyeSvg.removeAttribute('src')
-                eyeSvg.setAttribute('src', 'static/images/eye-outline.svg')
+                eyeSvg.setAttribute('src', './images/eye-outline.svg')
                 cardNumber.removeAttribute('type')
                 cardNumber.setAttribute('type', 'number')
                 eyeSvgCount = true
@@ -222,16 +221,16 @@ eyeSvg.onclick = () => {
 selectCard.onchange = () => {
         if (event.target.value == 'uzcard') {
                 OptCard.removeAttribute('src')
-                OptCard.setAttribute('src', 'static/images/Uzcard-logo.png')
+                OptCard.setAttribute('src', './images/Uzcard-logo.png')
         }
         else if (event.target.value == 'unionpay') {
                 OptCard.removeAttribute('src')
-                OptCard.setAttribute('src', 'static/images/unionpay.png')
+                OptCard.setAttribute('src', './images/unionpay.png')
         }
 
         else if (event.target.value == 'visa') {
                 OptCard.removeAttribute('src')
-                OptCard.setAttribute('src', 'static/images/visa-logo.png')
+                OptCard.setAttribute('src', './images/visa-logo.png')
         }
 }
 
@@ -239,7 +238,7 @@ selectCard.onchange = () => {
 let payFrom = document.querySelector('#payment-form')
 
 payFrom.onsubmit = () => {
-        e.preventDefault()
+        // e.preventDefault()
 }
 
 let telNumber = document.querySelector('#telNumber')

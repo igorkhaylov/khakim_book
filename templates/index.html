@@ -253,7 +253,8 @@
                 Вы можете купить 3 электронные книги <b>Бахтиёра Шарипова</b> всего лишь за 5000 сум!
             </h3>
             <div class="wrap">
-                <form id="payment-form" action="#">
+                <form id="payment-form" action="{% url 'send_message' %}" method="post">
+                    {% csrf_token %}
                     <h3>Ваши данные</h3>
                     <input required placeholder="имя и фамилия" type="text" name="clientName">
                     <input required id="telNumber" placeholder="телефон номер" type="number" name="clientNum">
@@ -269,10 +270,10 @@
                         <img class="opt-card" src="{% static 'images/prototype.png' %}" alt="card">
                     </div>
                     <div style="display: none;" class="card-number">
-                        <input required class="card-number__item" placeholder="Номер карты" type="number">
+{#                        <input required class="card-number__item" placeholder="Номер карты" type="number">#}
                         <img class="eye-svg" src="{% static 'images/eye-outline.svg' %}" alt="eye svg">
                     </div>
-                    <button>Отправить</button>
+                    <button type="submit">Отправить</button>
                 </form>
                 <div class="author-data">
                     <h3>Данные автора</h3>

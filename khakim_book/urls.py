@@ -20,4 +20,5 @@ from main import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
+    path('send_message/', views.send_message, name='send_message'),
 ]
