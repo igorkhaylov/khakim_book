@@ -88,7 +88,7 @@ let descripText = document.querySelector('#descrip-text')
 
 let book1 = [
         {
-                img: './images/book1.jpg',
+                img: './static/images/book1.jpg',
                 name: '«Кечиккан кабутарлар»',
                 yaer: ' 2018 год',
                 pages: '152 Страниц',
@@ -98,7 +98,7 @@ let book1 = [
 ]
 let book2 = [
         {
-                img: './images/book2.jpg',
+                img: './static/images/book2.jpg',
                 name: '«Юрак йиглайди»',
                 yaer: ' 2021 год',
                 pages: '412 страниц',
@@ -107,7 +107,7 @@ let book2 = [
 ]
 let book3 = [
         {
-                img: './images/book3.jpg',
+                img: './static/images/book3.jpg',
                 name: '«Фалак Тарозуси»',
                 yaer: ' 2016 год',
                 pages: '168 страниц',
